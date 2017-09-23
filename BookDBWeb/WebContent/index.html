@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Book catalog</title>
+</head>
+<body>
+<br>
+
+<a href="/BookDBWeb/MainServlet?command=view_book_list">View catalog</a><br><br>
+
+<a href="/BookDBWeb/MainServlet?command=get_book">View book</a><br><br>
+ 	
+ 	<form method="get" action="/BookDBWeb/MainServlet">
+ 	
+   <p><input type="hidden" name="command" value="get_book"></p>
+   <p><input type="text" name="value1"></p>
+   <p><input type="submit" formmethod="get" value="Get book"></p>
+    </form>
+ 
+<a href="/BookDBWeb/MainServlet?command=add_book">Add book</a><br><br>
+
+<a href="/BookDBWeb/MainServlet?command=delete_book">Delete book</a><br><br>
+
+</body>
+</html>
