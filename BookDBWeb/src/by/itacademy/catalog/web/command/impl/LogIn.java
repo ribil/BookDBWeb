@@ -41,27 +41,7 @@ public class LogIn implements BasicAction {
 			view = request.getRequestDispatcher("/error.jsp");
 		}
 		
-		//if (str1.equals("user") && str2.equals("user")) {
-			// view = request.getRequestDispatcher("/user.jsp");
-
-		//	out.println("Database request");
-/*
-			List<User> users = userDao.readUser();
-
-			for (int i = 0; i < users.size(); i++) {
-				if (users.get(i).getUser().equals("bob")) {
-					out.println(users.get(i).getUser());
-				}
-			}
-*/
-			// out.println(userDao.readUser());
-
-		//} else if (str1.equals("admin") && str2.equals("admin")) {
-		//	view = request.getRequestDispatcher("/admin.jsp");
-		/*} else {
-			view = request.getRequestDispatcher("/error.jsp");
-		}
-*/
+		
 		try {
 			view.forward(request, response);
 		} catch (ServletException e) {
@@ -71,11 +51,5 @@ public class LogIn implements BasicAction {
 		return null;
 	
 	}
-
-	// protected void doGet(HttpServletRequest request, HttpServletResponse
-	// response)
-	// throws ServletException, IOException {
-
-	// }
 
 }
