@@ -44,8 +44,7 @@ public class UserDaoImpl {
 			int id = rs.getInt(1);
 			String userName = rs.getString(2);
 			String password = rs.getString(2);
-			//System.out.println(userName);
-			//System.out.println(password);
+			
 			user.setUser(userName);
 			user.setPassword(password);
 			
